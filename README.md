@@ -23,7 +23,7 @@ category list 와 edge list 를 입력 받아 카테고리를 맵핑합니다.
 ##  실행 방법
 
 ```shell
-java -jar hanteo-1.0.0.jar 1 BTS
+java -jar hanteo1-1.0.0.jar 1 BTS
 ```
 > args1 : 1 or 2 <br>
 > args2 : {Category/Board} <br>
