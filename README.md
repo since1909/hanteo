@@ -2,11 +2,11 @@
 Java 17 (openJDK 17), Gradle
 # 프로젝트
 ## 1. 게시판 카테고리 자료구조 
+[hanteo1](https://github.com/since1909/hanteo/tree/master/hanteo1) <br>
 Category 클래스를 중심으로 게시판의 트리구조를 구현하였습니다.
 
  java 실행 파일 형태이며, Gradle 을 사용하여 패키징 했습니다. <br> 
- 데이터베이스를 선택해 카테고리 명을 검색하면 카테고리의 상세 정보와 그 하위 카테고리 정보가 출력됩니다. <br>
- [실행방법](#실행-방법) 
+ 데이터베이스를 선택해 카테고리 명을 검색하면 카테고리의 상세 정보와 그 하위 카테고리 정보가 출력됩니다. [> 실행방법 바로가기](#실행-방법) 
 
 ### Category
 트리 구조의 노드 역할을 하는 클래스 입니다. <br>
@@ -76,6 +76,8 @@ java -jar hanteo1-1.0.0.jar 1 BTS
 
 
 ## 2. 동전 조합 경우의 수
+
+[hanteo2](https://github.com/since1909/hanteo/tree/master/hanteo2)
 
 동적프로그래밍 (DP) 으로 경우의 수를 구했습니다. <br>
 sumArr[] 의 정의는 현재 동전까지를 포함한 합계의 경우의 수 입니다. <br>
