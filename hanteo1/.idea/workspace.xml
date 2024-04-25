@@ -69,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../spcloud/backend" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -328,7 +328,7 @@
       <workItem from="1713967559784" duration="33000" />
       <workItem from="1713967606410" duration="78000" />
       <workItem from="1713967699218" duration="53000" />
-      <workItem from="1713967765744" duration="5865000" />
+      <workItem from="1713967765744" duration="10343000" />
     </task>
     <servers />
   </component>

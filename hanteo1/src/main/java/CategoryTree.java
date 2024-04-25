@@ -2,6 +2,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -45,20 +46,22 @@ public class CategoryTree {
      * @throws JsonProcessingException
      */
     public void printTree(String name) throws JsonProcessingException {
-        Optional<Category> foundCategory = findCategory(name);
-        if (foundCategory.isPresent()) {
+        List<Category> foundCategory = findCategory(name);
+        if (foundCategory == null) {
+            System.out.println("Not Found: " + name);
+            return;
+        }
+        for (Category category : foundCategory) {
             ObjectMapper objectMapper = new ObjectMapper();
             objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-            String json = objectMapper.writeValueAsString(foundCategory.get());
+            String json = objectMapper.writeValueAsString(category);
             System.out.println(json);
-        } else {
-            System.out.println("Not Found: " + name);
         }
     }
 
-    private Optional<Category> findCategory(String name) {
+    private List<Category> findCategory(String name) {
         return categoryMap.values().stream()
                 .filter(category -> category.getName().equals(name))
-                .findFirst();
+                .collect(Collectors.toList());
     }
 }
